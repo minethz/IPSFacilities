@@ -711,6 +711,11 @@ app.patch("/api/sites/:site_id", async (req, res) => {
   }
 });
 
+app.get("/", (req, res) => {
+  res.send("IPS Facilities API is running 🚀");
+});
+
+
 // ------------------ START SERVER ------------------
 const PORT = 5001;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
