@@ -1,3 +1,5 @@
+console.log("🚀 Server starting...");
+
 import express from "express";
 import { createClient } from "@supabase/supabase-js";
 import cors from "cors";
@@ -15,6 +17,8 @@ const supabase = createClient(
   "https://mdwmsxhwhvrmewmrcawn.supabase.co",
   "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1kd21zeGh3aHZybWV3bXJjYXduIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjM1NzI2NDYsImV4cCI6MjA3OTE0ODY0Nn0.04rlyDgh2mTDTowiZiApcAoZ3K3wYefXWjquiLayaDo"
 );
+
+console.log("Supabase initialized");
 
 // ------------------ Distance Calculation ------------------
 function getDistance(lat1, lon1, lat2, lon2) {
@@ -718,4 +722,9 @@ app.get("/", (req, res) => {
 
 // ------------------ START SERVER ------------------
 const PORT = process.env.PORT || 5001;
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+
+app.listen(PORT, "0.0.0.0", () => {
+  console.log(`🚀 Server running on port ${PORT}`);
+});
+
+console.log("About to start server...");
