@@ -15,15 +15,5 @@
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.22.1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/minethz/IPSFacilities.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/minethz/IPSFacilities/issues"
-  },
-  "homepage": "https://github.com/minethz/IPSFacilities#readme"
+  }
 }
